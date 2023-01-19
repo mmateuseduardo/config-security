@@ -1,0 +1,38 @@
+#
+#
+# ============================================================================ #
+# CONFIG IPTABLES.                                                             #
+# config.security.sh                                                           #
+# Autor: mmateuseduardo                                                        #
+# URL: https://github.com/mmateuseduardo                                       #
+# ============================================================================ #
+# CREDITOS                                                                     #
+# Colaborador: danielcshn remontti                                             #
+# URL: https://github.com/danielcshn URL:https://github.com/remontti           #
+# ============================================================================ #
+# Todo projeto foi desenvolvido por mim, mas algumas ideias e scripts          #
+# que estão no meio do código pertence a outras pesssoas, sendo assim não      #
+# seria certo deixar de comentar o nome delas e dar os creditos,               #
+# Muito Obrigado e espero futuramente fazer melhorias                          #
+# ============================================================================ #
+# Copyright (c) 2023 mmateuseduardo                                            #
+# ============================================================================ #
+# Este script vem com ABSOLUTAMENTE NENHUMA GARANTIA!                          #
+# This Script comes with ABSOLUTELY NO WARRANTY!                               #
+#
+# High Intensty Colors Used:                                                   #
+# https://gist.github.com/JBlond/2fea43a3049b38287e5e9cefc87b2124#file-bash-colors-md #
+# =============================================================================#
+
+[Unit]
+Description=firewall
+ 
+[Service]
+Type=simple
+RemainAfterExit=yes
+ExecStart=/etc/init.d/iptables.sh start
+ExecStop=/etc/init.d/iptables.sh stop
+ExecReload=/etc/init.d/iptables.sh restart
+ 
+[Install]
+WantedBy=multi-user.target

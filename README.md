@@ -51,8 +51,7 @@ Atribuições<br>
 Informe-nos no "pull request" seu nome de usuário e organização para adicioná-lo à lista de contribuições no Readme.md.<br>
 
 ## 📧 Contato
-Link do Projeto: https://github.com/mmateuseduardo/Facilities.git<br>
-Link do Projeto: https://github.com/mmateuseduardo/Facilities/tree/main/config-security<br>
+Link do Projeto: https://github.com/mmateuseduardo/config-security<br>
 
 ## 📝 Licença
 ```

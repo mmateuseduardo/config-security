@@ -23,6 +23,7 @@
 # High Intensty Colors Used:                                                   #
 # https://gist.github.com/JBlond/2fea43a3049b38287e5e9cefc87b2124#file-bash-colors-md #
 # =============================================================================#
+#!/bin/bash
 ### BEGIN INIT INFO
 # Provides:          firewall
 # Required-Start:    $all

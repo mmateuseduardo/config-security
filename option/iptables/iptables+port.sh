@@ -1,3 +1,4 @@
+#!/bin/bash
 #
 #
 # ============================================================================ #
@@ -23,7 +24,7 @@
 # High Intensty Colors Used:                                                   #
 # https://gist.github.com/JBlond/2fea43a3049b38287e5e9cefc87b2124#file-bash-colors-md #
 # =============================================================================#
-#!/bin/bash
+
 ### BEGIN INIT INFO
 # Provides:          firewall
 # Required-Start:    $all
@@ -185,6 +186,9 @@ function stopFirewall(){
     /sbin/iptables -X -t nat
     /sbin/iptables -F -t mangle
     /sbin/iptables -X -t mangle
+    /sbin/iptables -P OUTPUT ACCEPT
+    /sbin/iptables -P FORWARD ACCEPT
+    /sbin/iptables -P INPUT ACCEPT
 
     /sbin/ip6tables -F
     /sbin/ip6tables -X

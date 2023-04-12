@@ -72,7 +72,7 @@ printf "${Yellow}============================================ Config IPTABLES ==
        systemctl enable firewall
        systemctl list-unit-files | grep firewall
 
-       sed -i "s/22/$PORTA/" /etc/init.d/iptables.sh && sed -i "s/SSH/$IPSSH4/" /etc/init.d/iptables.sh
+       sed -i "s/22/$PORTA/" /etc/init.d/iptables.sh && tr -s '[:space:]' '\n' < /etc/init.d/lport/lip4gerencia.txt >> /etc/init.d/lport/ip4gerencia.txt
 
   printf "\n${Yellow} [ Selecione o protocolo que vai utilizar ]\n\n"
   printf " ${Red}[${Blue}1${Red}] ${Green}TCP\n"

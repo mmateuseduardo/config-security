@@ -43,7 +43,7 @@ TCP=`cat /etc/init.d/lport/tcp.txt`
 #UDP
 UDP=`cat /etc/init.d/lport/udp.txt`
 #Defina os IPv4s que terão acesso a estas portas
-IP4GERENCIA="SSH"
+IP4GERENCIA=`cat /etc/init.d/lport/ip4gerencia.txt`
 #Defina os IPv4s que terão acesso a estas portas
 IP6GERENCIA="::1;"
 
